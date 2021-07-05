@@ -5,6 +5,10 @@ const QuizInit = (appBody) => {
   const quizTitle = document.createElement('h3');
   quizTitle.classList.add('quiz__title');
   quizTitle.innerText = 'Welcome to BatQuiz! Please select game level and set your nickname.'; //initial title
+  /* onQuizStart: `Nice to see you ${playerName}, let's face with ${difficulty} quiz!` 
+    onBonus: `Great job ${playerName}! Get more points with bonus question!`
+    onQuizEnd: DEPENDS ON FINAL RESULTS
+  */
 
   const quizBody = document.createElement('div');
   quizBody.classList.add('quiz__wrapper');
@@ -15,6 +19,11 @@ const QuizInit = (appBody) => {
   quizNav.classList.add('quiz__navigation');
 
   quizNav.innerHTML = '<button>SEND</button><button>RESET</button>'; //initial state
+  /* 
+    onQuizStart: <button>Check</button><button>Give up</button>
+    onBonus: <button>Check</button>
+    onQuizEnd: <button>Quit</button>
+  */
 
   quizWrapper.appendChild(quizTitle);
   quizWrapper.appendChild(quizBody);

@@ -2,10 +2,6 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 
-async function app() {
-  await Header();
-  await Main();
-  await Footer();
-}
-
-app();
+Header();
+Main();
+Footer();

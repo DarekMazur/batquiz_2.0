@@ -1,0 +1,39 @@
+{
+  "name": "batquiz",
+  "version": "2.0.0",
+  "description": "Simple quiz",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel index.html",
+    "build": "npx parcel build index.html",
+    "test": "npm test"
+  },
+  "author": "GacekCK",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --config .prettierrc --write",
+      "eslint --fix",
+      "npm test",
+      "git add"
+    ]
+  }
+}

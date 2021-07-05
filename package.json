@@ -2,11 +2,11 @@
   "name": "batquiz",
   "version": "2.0.0",
   "description": "Simple quiz",
-  "main": "index.js",
+  "main": ".src/index.js",
   "scripts": {
     "dev": "npx parcel index.html",
     "build": "npx parcel build index.html",
-    "test": "npm test"
+    "test": "jest"
   },
   "author": "GacekCK",
   "license": "MIT",

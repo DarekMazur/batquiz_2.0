@@ -1,0 +1,278 @@
+{
+  "easy": [
+    {
+      "id": "e01",
+      "question": "Kto jest Batmanem?",
+      "answers": {
+        "i": ["Clark Kent", "Hall Jordan", "Bruce Wayne", "Barry Allen"],
+        "img": "../assets/images/normal/1.jpg"
+      }
+    },
+    {
+      "id": "e02",
+      "question": "Z jakiego miasta pochodzi Batman?",
+      "answers": {
+        "i": ["Gotham City", "Star City", "Metropolis", "Central City"],
+        "img": ""
+      }
+    },
+    {
+      "id": "e03",
+      "question": "Jeden z przeciwników Batmana jest znany z zagadek. Kto?",
+      "answers": {
+        "i": ["Joker", "Killer Crock", "Riddler", "Poison Ivy"],
+        "img": ""
+      }
+    },
+    {
+      "id": "e04",
+      "question": "Kogo nazywano \"Cudownym Chłopcem\"?",
+      "answers": {
+        "i": ["Młodego Bruce'a Wayne'a", "Robina", "Jima Gordona", "Komisarza Loeba"],
+        "img": ""
+      }
+    },
+    {
+      "id": "e05",
+      "question": "Zanim Dick Greyson został Robinem był:",
+      "answers": {
+        "i": [
+          "Kucharzem w Big Belly Burger",
+          "Genialnym hakerem",
+          "Zwykłym nastolatkiem",
+          "Cyrkowcem"
+        ],
+        "img": ""
+      }
+    },
+    {
+      "id": "e06",
+      "question": "Jak miała na imię matka Bruce'a?",
+      "answers": {
+        "i": ["Marie", "Martha", "Monica", "Margaret"],
+        "img": ""
+      }
+    },
+    {
+      "id": "e07",
+      "question": "Kim był z zawodu Thomas Wayne?",
+      "answers": {
+        "i": ["Lekarzem", "Prawnikiem", "Inżynierem", "Chemikiem"],
+        "img": ""
+      }
+    },
+    {
+      "id": "e08",
+      "question": "Jak zginęli rodzice Bruce'a Wayne'a?",
+      "answers": {
+        "i": [
+          "W wypadku samochodowym",
+          "Byli w budynku, gdzie mafia podłożyła bombę",
+          "Zastrzelił ich złodziej",
+          "W wypadku lotniczym"
+        ],
+        "img": ""
+      }
+    },
+    {
+      "id": "e09",
+      "question": "Jak Bruce poznał Alfreda?",
+      "answers": {
+        "i": [
+          "Podczas zagranicznej podróży",
+          "Alfred pracował dla Wayne'ów jeszcze przed narodzinami Bruce'a",
+          "Bruce uratował Alfreda przed bandytami",
+          "W restauracji"
+        ],
+        "img": ""
+      }
+    },
+    {
+      "id": "e10",
+      "question": "Jak nazywano Batmana i Robina?",
+      "answers": {
+        "i": ["Rycerze Nocy", "Skrzydlaci Obrońcy", "Liga Sprawiedliwości", "Dynamiczny Duet"],
+        "img": ""
+      }
+    }
+  ],
+  "normal": [
+    {
+      "id": "n01",
+      "question": "Jakie jest prawdziwe imię Catwoman?",
+      "answers": {
+        "i": ["Pamela Isley", "Selina Kyle", "Harleen Quinzel", "Vicky Vale"],
+        "img": "../assets/images/easy/1.jpg"
+      }
+    },
+    {
+      "id": "n02",
+      "question": "Która z wymienionych postaci nigdy nie zastępowała Bruce'a Wayne'a w roli Batmana?",
+      "answers": {
+        "i": ["Jim Gordon", "Dick Greyson", "Jean Paul Valley", "Harvey Bullock"],
+        "img": ""
+      }
+    },
+    {
+      "id": "n03",
+      "question": "Batman po raz pierwszy pojawił się w numerze Detective Comics vol. 1 #27 z maja 1939 roku. Kiedy numer trafił do sprzedarzy?",
+      "answers": {
+        "i": ["17 marca '39", "18 kwietnia '39", "7 maja '39", "1 czerwca '39"],
+        "img": ""
+      }
+    },
+    {
+      "id": "n04",
+      "question": "Zanim Joker stał się znany pod obecną postacią, także był przestępcą. Jaki nosił przydomek?",
+      "answers": {
+        "i": ["Bad Clown", "Red Hood", "Verdigo", "Venom"],
+        "img": ""
+      }
+    },
+    {
+      "id": "n05",
+      "question": "Alfred Pennyworth, zanim został kamerdynerem rodziny Wayne'ów był m. in.:",
+      "answers": {
+        "i": ["aktorem", "kucharzem", "muzykiem", "kelnerem"],
+        "img": ""
+      }
+    },
+    {
+      "id": "n06",
+      "question": "Damian Wayne był synemm Bruce'a oraz:",
+      "answers": {
+        "i": ["Seliny Kyle", "Barbary Gordon", "Talii al-Ghul", "Jezebel Jet"],
+        "img": ""
+      }
+    },
+    {
+      "id": "n07",
+      "question": "Dick Greyson, kiedy odłożył kostium Robina i został Nightwingiem, przeniósł się do innego miasta. Jakiego?",
+      "answers": {
+        "i": ["Star City", "Blüdheaven", "Coast City", "Żadnego, został w Gotham"],
+        "img": ""
+      }
+    },
+    {
+      "id": "n08",
+      "question": "Jedną z dwóch osób, które stworzyły postać Batmana był Bob Kane. Wspólnie z kim?",
+      "answers": {
+        "i": ["Bill Finger", "Stan Lee", "Mort Weisinger", "Joe Shuster"],
+        "img": ""
+      }
+    },
+    {
+      "id": "n09",
+      "question": "Jason Todd, drugi z Robinów, został zabity przez:",
+      "answers": {
+        "i": ["Bane'a", "Jockera", "Riddlera", "Pingwina"],
+        "img": ""
+      }
+    },
+    {
+      "id": "n10",
+      "question": "Zanim Hervey Dent został Two Face'em, pełnił funkcję:",
+      "answers": {
+        "i": [
+          "Komisarza Policji Gotham",
+          "Kongresmana",
+          "Burmistrza Gotham",
+          "Prokuratora Generalnego Gotham"
+        ],
+        "img": ""
+      }
+    }
+  ],
+  "hard": [
+    {
+      "id": "h01",
+      "question": "Kiedy ukazał się komiks Batman #1?",
+      "answers": {
+        "i": ["maj '39", "kwiecień '40", "lipiec '41", "kwiecień '43"],
+        "img": "../assets/images/easy/1.jpg"
+      }
+    },
+    {
+      "id": "h02",
+      "question": "W którym numerze po raz pierwszy pojawiła się postać Alfreda?",
+      "answers": {
+        "i": ["maj '39", "kwiecień '40", "lipiec '41", "kwiecień '43"],
+        "img": ""
+      }
+    },
+    {
+      "id": "h03",
+      "question": "Ile lat miał Bruce Wayne w pierwszym tomie \"Powrotu Mrocznego Rycerza\"?",
+      "answers": {
+        "i": ["29", "35", "50", "61"],
+        "img": ""
+      }
+    },
+    {
+      "id": "h04",
+      "question": "Kto w \"Kryzysie Torzsamości\" zabił ojca Tima Drake'a?",
+      "answers": {
+        "i": ["Captain Cold", "Mirror Master", "Captain Boomerang", "Grodd"],
+        "img": ""
+      }
+    },
+    {
+      "id": "h05",
+      "question": "W \"Wieży Babel\" Ra's Al-Ghoul wykradł plany Batmana i użył do pokonania Ligi Sprawiedliwości. Co zrobił, żeby zając w tym czasie Bruce'a?",
+      "answers": {
+        "i": [
+          "Rozpylił radioaktywny gaz w Jaskini Nietoperza",
+          "Porwał Alfreda",
+          "Podłożył bombę atomową w Gotham",
+          "Ukradł trumny z ciałami jego rodziców"
+        ],
+        "img": ""
+      }
+    },
+    {
+      "id": "h06",
+      "question": "Jak w historii \"Zagłada Gotham\" miał na nazwisko ekscentryczny badacz nietoperzy?",
+      "answers": {
+        "i": ["Manfurd", "Prinn", "Langstrom", "Queen"],
+        "img": ""
+      }
+    },
+    {
+      "id": "h07",
+      "question": "Jak nazywał się przedsiębiorca, który w komiksie Detective Comics #27 z maja 1939 roku próbował zamordować swoich wspólników?",
+      "answers": {
+        "i": ["Alfred Stryker", "Paul Rotgers", "Steven Crane", "James Lambert"],
+        "img": ""
+      }
+    },
+    {
+      "id": "h08",
+      "question": "Jak miała na imię pielęgniarką, którą w komiksie \"Azyl Arkham\" Joker wykorzystał do sprowadzenia Batmana?",
+      "answers": {
+        "i": ["Martha", "Pearl", "Jenny", "Daisy"],
+        "img": ""
+      }
+    },
+    {
+      "id": "h09",
+      "question": "W komiksie Batman #20 z serii New52 pojawia się prototyp charakterystycznego stroju Batmana. Z jakiej serii pochodzi?",
+      "answers": {
+        "i": [
+          "Powrót Mrocznego Rycerza",
+          "Batman Beyond",
+          "Batman Incorporated",
+          "Flashpoint Paradox"
+        ],
+        "img": ""
+      }
+    },
+    {
+      "id": "h10",
+      "question": "W komiksie Batman #2 z serii New52 Mroczny Rycerz znajduje trop ukryty w zębie ofiary zabójstwa. Który to był ząb?",
+      "answers": {
+        "i": ["Lewa czwórka", "Prawa górna jedynka", "Trzeci ząb trzonowy", "Lewy ząb mądrości"],
+        "img": ""
+      }
+    }
+  ]
+}

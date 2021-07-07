@@ -5,7 +5,12 @@ const buildQuiz = (questionData) => {
   const questionBody = document.createElement('div');
   questionBody.classList.add('question');
   questionBody.innerHTML = `
-  <h3>${questionData.question}</div>
+  <h3>${questionData.question}</h3>
+  <ul class='answersList answersList_${questionData.id}'>
+    ${questionData.answers.i
+      .map((answer) => `<li class='listItem listItem__${questionData.id}'>${answer}</li>`)
+      .join('')}
+  </ul>
   `;
   quizBody.appendChild(questionBody);
 };

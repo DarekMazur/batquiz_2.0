@@ -1,6 +1,9 @@
 import { buildQuizBody } from '../../utils/buildQuizBody';
+import { countResult } from '../../utils/countResult';
 import { createButtonList } from '../../utils/createButtonList';
-import GetHeader from '../GetHeader/GetHeader';
+import getHeader from '../../utils/getHeader';
+
+//TODO: catch errors!
 
 const QuizInit = (appBody) => {
   const initialState = {
@@ -11,6 +14,7 @@ const QuizInit = (appBody) => {
 
   let quizDifficulty = initialState.quizDifficulty;
   let userName = initialState.userName;
+  let viewType = initialState.viewType;
 
   const handleClickAnswer = (e) => {
     if (e.target.parentElement.querySelector('.listItem--active')) {
@@ -39,12 +43,23 @@ const QuizInit = (appBody) => {
     document.querySelector('.alertMessage').innerHTML = '';
   };
 
+  const handleQuizSubmit = () => {
+    let count = countResult(document.querySelectorAll('.listItem--active'), quizDifficulty, 'quiz');
+    console.log(count);
+  };
+
   const handleClickStart = async function () {
     await buildQuizBody(quizDifficulty);
-    GetHeader(quizTitle, 'onQuiz', userName, quizDifficulty);
+    getHeader(quizTitle, 'onQuiz', userName, quizDifficulty);
     document.querySelectorAll(`.listItem`).forEach((listItem) => {
       listItem.addEventListener('click', handleClickAnswer);
     });
+    document.querySelector(`.quiz__navigation`).innerHTML = `
+  <button name='resolve'>Send!</button>
+  <button name='giveUp'>Give up</button>
+  `;
+
+    document.querySelector(`button[name='resolve']`).addEventListener('click', handleQuizSubmit);
   };
 
   const quizWrapper = document.createElement('section');
@@ -52,7 +67,7 @@ const QuizInit = (appBody) => {
 
   const quizTitle = document.createElement('h3');
   quizTitle.classList.add('quiz__title');
-  GetHeader(quizTitle, initialState.viewType);
+  getHeader(quizTitle, viewType);
 
   const quizBody = document.createElement('div');
   quizBody.classList.add('quiz__wrapper');

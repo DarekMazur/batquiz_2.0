@@ -1,4 +1,4 @@
-const GetHeader = (headerLocation, state, playerName, difficulty) => {
+const getHeader = (headerLocation, state, playerName, difficulty) => {
   headerContent = {
     onInit: 'Welcome to BatQuiz! Please select game level and set your nickname.',
     onQuiz: `Nice to see you ${playerName}, let's face with ${difficulty} quiz!`,
@@ -11,4 +11,4 @@ const GetHeader = (headerLocation, state, playerName, difficulty) => {
   } catch {}
 };
 
-export default GetHeader;
+export default getHeader;

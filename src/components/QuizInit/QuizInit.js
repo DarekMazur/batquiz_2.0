@@ -40,21 +40,31 @@ const QuizInit = (appBody) => {
     document.querySelector('.alertMessage').innerHTML = '';
   };
 
-  const handleQuizSubmit = async () => {
-    count += await countResult(
-      getUserAnswers(document.querySelectorAll('.listItem--active')),
-      quizDifficulty,
-      count === null ? 'quiz' : 'bonus',
-      userName,
-    );
-    quizDifficulty = initialState.quizDifficulty;
-    userName = initialState.userName;
-    viewType = initialState.viewType;
-    count = initialState.count;
+  const handleQuizSubmit = () => {
+    if (document.querySelectorAll('.listItem--active').length < 10) {
+      if (confirm('Quiz is not finished yet. Are you sure you want to continue?')) {
+        countResult(
+          getUserAnswers(document.querySelectorAll('.listItem--active')),
+          quizDifficulty,
+          count === null ? 'quiz' : 'bonus',
+          userName,
+        );
+        quizDifficulty = initialState.quizDifficulty;
+        userName = initialState.userName;
+        viewType = initialState.viewType;
+        count = initialState.count;
+      } else {
+        null;
+      }
+    }
   };
 
   const handleQuizGiveUp = () => {
-    location.reload();
+    if (confirm('Are you sure you want to quit?')) {
+      location.reload();
+    } else {
+      null;
+    }
   };
 
   const handleClickStart = async function () {

@@ -35,7 +35,7 @@ export const buildResutsView = (count, maxCount) => {
   const renderResults = async () => {
     document.querySelector('.quiz__title').innerHTML = resultContent[rank];
     document.querySelector('.quiz__wrapper').innerHTML = `
-      <p>You get ${count} points.</p>
+      <p>You get ${count} points (${result < 0 ? 0 : (result * 100).toFixed(2)}%).</p>
     `;
     document.querySelector(`.quiz__navigation`).innerHTML = `
       <button name='quit'>Close</button>

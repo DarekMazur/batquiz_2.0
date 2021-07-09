@@ -28,11 +28,21 @@ export const buildResutsView = (count, maxCount) => {
     wayne: 'W czym mogę służyć, Paniczu Bruce?',
   };
 
-  document.querySelector('.quiz__title').innerHTML = resultContent[rank];
-  document.querySelector('.quiz__wrapper').innerHTML = `
-  <p>You get ${count} points.</p>
-  `;
-  document.querySelector(`.quiz__navigation`).innerHTML = `
-    <button name='quit'>Close</button>
-  `;
+  const handleQuit = () => {
+    location.reload();
+  };
+
+  const renderResults = async () => {
+    document.querySelector('.quiz__title').innerHTML = resultContent[rank];
+    document.querySelector('.quiz__wrapper').innerHTML = `
+      <p>You get ${count} points.</p>
+    `;
+    document.querySelector(`.quiz__navigation`).innerHTML = `
+      <button name='quit'>Close</button>
+    `;
+  };
+
+  renderResults().then(
+    document.querySelector(`button[name='quit']`).addEventListener('click', handleQuit),
+  );
 };

@@ -4,6 +4,7 @@ import { createButtonList } from '../../utils/createButtonList';
 import getHeader from '../../utils/getHeader';
 import getUserAnswers from '../../utils/getUserAnswers';
 import { handleClickAnswer } from '../../utils/handlers';
+import { renderInitialBody } from '../../utils/renderInitialBody';
 
 //TODO: catch errors!
 
@@ -46,6 +47,14 @@ const QuizInit = (appBody) => {
       count === null ? 'quiz' : 'bonus',
       userName,
     );
+    quizDifficulty = initialState.quizDifficulty;
+    userName = initialState.userName;
+    viewType = initialState.viewType;
+    count = initialState.count;
+  };
+
+  const handleQuizGiveUp = () => {
+    location.reload();
   };
 
   const handleClickStart = async function () {
@@ -60,6 +69,7 @@ const QuizInit = (appBody) => {
   `;
 
     document.querySelector(`button[name='resolve']`).addEventListener('click', handleQuizSubmit);
+    document.querySelector(`button[name='giveUp']`).addEventListener('click', handleQuizGiveUp);
   };
 
   const quizWrapper = document.createElement('section');

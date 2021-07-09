@@ -1,6 +1,4 @@
 /*
-  TODO: logic for give up button
-  TODO: logic for close results button
   TODO: refactoring
   TODO: tests
 */

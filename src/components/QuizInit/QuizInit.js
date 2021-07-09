@@ -109,10 +109,6 @@ const QuizInit = (appBody) => {
     .then(
       document.querySelector(`button[name='submit']`).addEventListener('click', handleClickStart),
     );
-
-  /* 
-    onQuizEnd: <button>Quit</button>
-  */
 };
 
 export default QuizInit;

@@ -32,4 +32,7 @@ export const buildResutsView = (count, maxCount) => {
   document.querySelector('.quiz__wrapper').innerHTML = `
   <p>You get ${count} points.</p>
   `;
+  document.querySelector(`.quiz__navigation`).innerHTML = `
+    <button name='quit'>Close</button>
+  `;
 };

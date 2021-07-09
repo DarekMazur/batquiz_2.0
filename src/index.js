@@ -1,3 +1,10 @@
+/*
+  TODO: logic for give up button
+  TODO: logic for close results button
+  TODO: refactoring
+  TODO: tests
+*/
+
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';

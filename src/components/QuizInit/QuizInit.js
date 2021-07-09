@@ -2,6 +2,7 @@ import { buildQuizBody } from '../../utils/buildQuizBody';
 import { countResult } from '../../utils/countResult';
 import { createButtonList } from '../../utils/createButtonList';
 import getHeader from '../../utils/getHeader';
+import getUserAnswers from '../../utils/getUserAnswers';
 
 //TODO: catch errors!
 
@@ -10,11 +11,13 @@ const QuizInit = (appBody) => {
     quizDifficulty: '',
     userName: '',
     viewType: 'onInit',
+    count: null,
   };
 
   let quizDifficulty = initialState.quizDifficulty;
   let userName = initialState.userName;
   let viewType = initialState.viewType;
+  let count = initialState.count;
 
   const handleClickAnswer = (e) => {
     if (e.target.parentElement.querySelector('.listItem--active')) {
@@ -43,8 +46,13 @@ const QuizInit = (appBody) => {
     document.querySelector('.alertMessage').innerHTML = '';
   };
 
-  const handleQuizSubmit = () => {
-    let count = countResult(document.querySelectorAll('.listItem--active'), quizDifficulty, 'quiz');
+  const handleQuizSubmit = async () => {
+    count += await countResult(
+      getUserAnswers(document.querySelectorAll('.listItem--active')),
+      quizDifficulty,
+      count === null ? 'quiz' : 'bonus',
+      userName,
+    );
     console.log(count);
   };
 

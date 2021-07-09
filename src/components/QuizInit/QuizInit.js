@@ -4,7 +4,6 @@ import { createButtonList } from '../../utils/createButtonList';
 import getHeader from '../../utils/getHeader';
 import getUserAnswers from '../../utils/getUserAnswers';
 import { handleClickAnswer } from '../../utils/handlers';
-import { renderInitialBody } from '../../utils/renderInitialBody';
 
 //TODO: catch errors!
 
@@ -41,22 +40,26 @@ const QuizInit = (appBody) => {
   };
 
   const handleQuizSubmit = () => {
+    const sendAnswers = () => {
+      countResult(
+        getUserAnswers(document.querySelectorAll('.listItem--active')),
+        quizDifficulty,
+        count === null ? 'quiz' : 'bonus',
+        userName,
+      );
+      quizDifficulty = initialState.quizDifficulty;
+      userName = initialState.userName;
+      viewType = initialState.viewType;
+      count = initialState.count;
+    };
     if (document.querySelectorAll('.listItem--active').length < 10) {
       if (confirm('Quiz is not finished yet. Are you sure you want to continue?')) {
-        countResult(
-          getUserAnswers(document.querySelectorAll('.listItem--active')),
-          quizDifficulty,
-          count === null ? 'quiz' : 'bonus',
-          userName,
-        );
-        quizDifficulty = initialState.quizDifficulty;
-        userName = initialState.userName;
-        viewType = initialState.viewType;
-        count = initialState.count;
+        sendAnswers();
       } else {
         null;
       }
     }
+    sendAnswers();
   };
 
   const handleQuizGiveUp = () => {

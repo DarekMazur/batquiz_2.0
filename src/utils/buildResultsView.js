@@ -1,5 +1,3 @@
-import getHeader from './getHeader';
-
 export const buildResutsView = (count, maxCount) => {
   const result = count / maxCount;
 

@@ -3,6 +3,7 @@ import { countResult } from '../../utils/countResult';
 import { createButtonList } from '../../utils/createButtonList';
 import getHeader from '../../utils/getHeader';
 import getUserAnswers from '../../utils/getUserAnswers';
+import { handleClickAnswer } from '../../utils/handlers';
 
 //TODO: catch errors!
 
@@ -19,15 +20,7 @@ const QuizInit = (appBody) => {
   let viewType = initialState.viewType;
   let count = initialState.count;
 
-  const handleClickAnswer = (e) => {
-    if (e.target.parentElement.querySelector('.listItem--active')) {
-      e.target.parentElement
-        .querySelector('.listItem--active')
-        .classList.remove('listItem--active');
-    }
-
-    e.target.classList.add('listItem--active');
-  };
+  const handleAnswer = (e) => handleClickAnswer(e);
 
   const handleDifficultyClick = (e) => {
     quizDifficulty = e.target.name;
@@ -53,14 +46,13 @@ const QuizInit = (appBody) => {
       count === null ? 'quiz' : 'bonus',
       userName,
     );
-    console.log(count);
   };
 
   const handleClickStart = async function () {
     await buildQuizBody(quizDifficulty);
     getHeader(quizTitle, 'onQuiz', userName, quizDifficulty);
     document.querySelectorAll(`.listItem`).forEach((listItem) => {
-      listItem.addEventListener('click', handleClickAnswer);
+      listItem.addEventListener('click', handleAnswer);
     });
     document.querySelector(`.quiz__navigation`).innerHTML = `
   <button name='resolve'>Send!</button>
@@ -119,8 +111,6 @@ const QuizInit = (appBody) => {
     );
 
   /* 
-    onQuiz: <button>Check</button><button>Give up</button>
-    onBonus: <button>Check</button>
     onQuizEnd: <button>Quit</button>
   */
 };

@@ -5,7 +5,7 @@
       "question": "Kto jest Batmanem?",
       "answers": {
         "i": ["Clark Kent", "Hall Jordan", "Bruce Wayne", "Barry Allen"],
-        "img": "e01"
+        "img": "/normal/1.jpg"
       }
     },
     {
@@ -13,7 +13,7 @@
       "question": "Z jakiego miasta pochodzi Batman?",
       "answers": {
         "i": ["Gotham City", "Star City", "Metropolis", "Central City"],
-        "img": "e02"
+        "img": ""
       }
     },
     {
@@ -21,7 +21,7 @@
       "question": "Jeden z przeciwników Batmana jest znany z zagadek. Kto?",
       "answers": {
         "i": ["Joker", "Killer Crock", "Riddler", "Poison Ivy"],
-        "img": "e03"
+        "img": ""
       }
     },
     {
@@ -29,7 +29,7 @@
       "question": "Kogo nazywano \"Cudownym Chłopcem\"?",
       "answers": {
         "i": ["Młodego Bruce'a Wayne'a", "Robina", "Jima Gordona", "Komisarza Loeba"],
-        "img": "e04"
+        "img": ""
       }
     },
     {
@@ -42,7 +42,7 @@
           "Zwykłym nastolatkiem",
           "Cyrkowcem"
         ],
-        "img": "e05"
+        "img": ""
       }
     },
     {
@@ -50,7 +50,7 @@
       "question": "Jak miała na imię matka Bruce'a?",
       "answers": {
         "i": ["Marie", "Martha", "Monica", "Margaret"],
-        "img": "e06"
+        "img": ""
       }
     },
     {
@@ -58,7 +58,7 @@
       "question": "Kim był z zawodu Thomas Wayne?",
       "answers": {
         "i": ["Lekarzem", "Prawnikiem", "Inżynierem", "Chemikiem"],
-        "img": "e07"
+        "img": ""
       }
     },
     {
@@ -71,7 +71,7 @@
           "Zastrzelił ich złodziej",
           "W wypadku lotniczym"
         ],
-        "img": "e08"
+        "img": ""
       }
     },
     {
@@ -84,7 +84,7 @@
           "Bruce uratował Alfreda przed bandytami",
           "W restauracji"
         ],
-        "img": "e09"
+        "img": ""
       }
     },
     {
@@ -92,7 +92,7 @@
       "question": "Jak nazywano Batmana i Robina?",
       "answers": {
         "i": ["Rycerze Nocy", "Skrzydlaci Obrońcy", "Liga Sprawiedliwości", "Dynamiczny Duet"],
-        "img": "e10"
+        "img": ""
       }
     }
   ],

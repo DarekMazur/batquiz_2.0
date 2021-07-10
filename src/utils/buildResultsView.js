@@ -1,20 +1,34 @@
+import noobImg from 'url:/src/assets/images/ranks/noob.jpg';
+import amateurImg from 'url:/src/assets/images/ranks/amateur.jpg';
+import normalImg from 'url:/src/assets/images/ranks/normal.jpg';
+import advancedImg from 'url:/src/assets/images/ranks/advanced.jpg';
+import perfectImg from 'url:/src/assets/images/ranks/perfect.jpg';
+import wayneImg from 'url:/src/assets/images/ranks/wayne.jpg';
+
 export const buildResutsView = (count, maxCount) => {
   const result = count / maxCount;
 
   let rank = '';
+  let rankImg = null;
 
   if (result <= 0) {
     rank = 'noob';
+    rankImg = noobImg;
   } else if (result < 0.25) {
     rank = 'amateur';
+    rankImg = amateurImg;
   } else if (result < 0.6) {
     rank = 'normal';
+    rankImg = normalImg;
   } else if (result < 0.8) {
     rank = 'advanced';
-  } else if (result <= 1) {
+    rankImg = advancedImg;
+  } else if (result < 1) {
     rank = 'perfect';
+    rankImg = perfectImg;
   } else {
     rank = 'wayne';
+    rankImg = wayneImg;
   }
 
   const resultContent = {
@@ -33,6 +47,7 @@ export const buildResutsView = (count, maxCount) => {
   const renderResults = async () => {
     document.querySelector('.quiz__title').innerHTML = resultContent[rank];
     document.querySelector('.quiz__wrapper').innerHTML = `
+      <img src=${rankImg} alt=${rank}>
       <p>You get ${count} points (${result < 0 ? 0 : (result * 100).toFixed(0)}%).</p>
     `;
     document.querySelector(`.quiz__navigation`).innerHTML = `

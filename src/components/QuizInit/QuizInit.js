@@ -5,8 +5,6 @@ import getHeader from '../../utils/getHeader';
 import getUserAnswers from '../../utils/getUserAnswers';
 import { handleClickAnswer } from '../../utils/handlers';
 
-//TODO: catch errors!
-
 const QuizInit = (appBody) => {
   const initialState = {
     quizDifficulty: '',
@@ -67,15 +65,29 @@ const QuizInit = (appBody) => {
   };
 
   const handleClickStart = async function () {
+    if (quizDifficulty === '') {
+      try {
+        throw new Error('Choose quiz difficulty');
+      } catch (e) {
+        return (document.querySelector('.alertMessage').innerHTML = e.message);
+      }
+    } else if (userName === '' || userName === ' ') {
+      try {
+        throw new Error(`Don't be shy, introduce yourself!`);
+      } catch (e) {
+        return (document.querySelector('.alertMessage').innerHTML = e.message);
+      }
+    }
+
     await buildQuizBody(quizDifficulty);
     getHeader(quizTitle, 'onQuiz', userName, quizDifficulty);
     document.querySelectorAll(`.listItem`).forEach((listItem) => {
       listItem.addEventListener('click', handleAnswer);
     });
     document.querySelector(`.quiz__navigation`).innerHTML = `
-  <button name='resolve'>Send!</button>
-  <button name='giveUp'>Give up</button>
-  `;
+        <button name='resolve'>Send!</button>
+        <button name='giveUp'>Give up</button>
+      `;
 
     document.querySelector(`button[name='resolve']`).addEventListener('click', handleQuizSubmit);
     document.querySelector(`button[name='giveUp']`).addEventListener('click', handleQuizGiveUp);

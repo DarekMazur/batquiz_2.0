@@ -1,3 +1,5 @@
+import * as style from './QuizStyle.scss';
+
 import { buildQuizBody } from '../../utils/buildQuizBody';
 import { countResult } from '../../utils/countResult';
 import { createButtonList } from '../../utils/createButtonList';
@@ -81,6 +83,7 @@ const QuizInit = (appBody) => {
 
     await buildQuizBody(quizDifficulty);
     getHeader(quizTitle, 'onQuiz', userName, quizDifficulty);
+
     document.querySelectorAll(`.listItem`).forEach((listItem) => {
       listItem.addEventListener('click', handleAnswer);
     });
@@ -96,6 +99,13 @@ const QuizInit = (appBody) => {
   const quizWrapper = document.createElement('section');
   quizWrapper.classList.add('quiz');
 
+  const introductionMessage = document.createElement('div');
+  introductionMessage.classList.add('quiz__introduction');
+  introductionMessage.innerHTML = `
+    <p><span class='bat'>Batman</span>, Człowiek-Nietoperz, Zamaskowany Krzyżowiec, Mroczny Rycerz, Strażnik Gotham, Gacek. Postać-legenda. Uznany za największego bohatera wszechczasów przez magazyn SFX. Człowiek, któy pomimo braku supermocy (o ile za supermoc nie uznać liczby zer na koncie) jest w stanie pokonać najpotężniejszych przedstawicieli Universum DC. Dziś nadszedł czas, by sprawdzić swoją wiedzę o Człowieku-Nietoperzu. Pytania są podzielone na trzy kategorie - łatwe, normalne i trudne. Jednak jeżeli swoje informacje o Mrocznym Rycerzu czerpiesz z filmów, to w Arkham mają już przygotowaną celę.</p>
+    <p>Przed Tobą 10 pytań. Czas rozruszać szare komórki i odpowiedzieć na pytanie - Jak dobrze znasz Zamaskowanego Krzyżowca!</p>
+  `;
+
   const quizTitle = document.createElement('h3');
   quizTitle.classList.add('quiz__title');
   getHeader(quizTitle, viewType);
@@ -105,22 +115,23 @@ const QuizInit = (appBody) => {
 
   const renderInitialQuizBody = async () => {
     quizBody.innerHTML = `
-  <div class='buttonWrapper'>
-    ${createButtonList(['easy', 'normal', 'hard'], 'selectDifficulty')}
-  </div>
-  <input class='nameForm_playerName' name='name' />
-  <label for='name'>Your nickname</label>
-  <p class='alertMessage'>
-  </p>
-  `;
+      <div class='buttonWrapper'>
+        ${createButtonList(['easy', 'normal', 'hard'], 'selectDifficulty')}
+      </div>
+      <input class='nameForm_playerName' name='name' />
+      <label for='name'>Imię/Nick</label>
+      <p class='alertMessage'>
+      </p>
+    `;
     const quizNav = document.createElement('div');
     quizNav.classList.add('quiz__navigation');
 
     quizNav.innerHTML = `
-  <button name='submit'>Start</button>
-  <button name='reset'>Reset</button>
-  `;
+      <button name='submit'>Start</button>
+      <button name='reset'>Reset</button>
+    `;
     quizWrapper.appendChild(quizTitle);
+    quizWrapper.appendChild(introductionMessage);
     quizWrapper.appendChild(quizBody);
     quizWrapper.appendChild(quizNav);
 

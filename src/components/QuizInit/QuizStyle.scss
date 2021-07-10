@@ -1,0 +1,23 @@
+.quiz {
+  width: 90%;
+
+  &__introduction {
+    text-indent: 1.5rem;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__wrapper {
+    .alertMessage {
+      height: 1.8rem;
+      padding-top: 0.3rem;
+      margin: 0.3rem;
+      color: #e43417;
+      font-family: 'Indie Flower', cursive;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+  }
+}

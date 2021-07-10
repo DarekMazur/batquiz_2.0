@@ -47,10 +47,6 @@ const QuizInit = (appBody) => {
         count === null ? 'quiz' : 'bonus',
         userName,
       );
-      quizDifficulty = initialState.quizDifficulty;
-      userName = initialState.userName;
-      viewType = initialState.viewType;
-      count = initialState.count;
     };
     if (document.querySelectorAll('.listItem--active').length < 10) {
       if (confirm('Quiz is not finished yet. Are you sure you want to continue?')) {

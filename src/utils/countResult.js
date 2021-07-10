@@ -84,14 +84,14 @@ export const countResult = async (answers, difficulty, questionType, userName) =
             }
           }
         });
-        buildResutsView(count, maxCount);
+        buildResutsView(count, maxCount + increase(difficulty) * 2);
       } catch {
-        buildResutsView(count, maxCount);
+        buildResutsView(count, maxCount + increase(difficulty) * 2);
       }
     };
 
     document.querySelector(`.quiz__navigation`).addEventListener('click', bonusAnswer);
   } else {
-    buildResutsView(count, maxCount);
+    buildResutsView(count, maxCount + increase(difficulty) * 2);
   }
 };

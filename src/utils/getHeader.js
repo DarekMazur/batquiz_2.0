@@ -1,12 +1,22 @@
 const getHeader = (headerLocation, state, playerName, difficulty) => {
+  const escapeHtml = (usafeInput) => {
+    var text = document.createTextNode(usafeInput);
+    var p = document.createElement('p');
+    p.appendChild(text);
+    return p.innerHTML;
+  };
+
   headerContent = {
-    onInit: 'Welcome to BatQuiz! Please select game level and set your nickname.',
-    onQuiz: `Nice to see you ${playerName}, let's face with ${difficulty} quiz!`,
-    onBonus: `Great job ${playerName}! Get more points with bonus ${difficulty} question!`,
+    onInit: 'Zmierz się z Batmanem!',
+    onQuiz: `Witaj, <span class='user'>${escapeHtml(playerName)}</span>!
+    <p>Grasz na poziomie ${difficulty}</p>`,
+    onBonus: `Great job <span class='user'>${escapeHtml(
+      playerName,
+    )}</span> Get more points with bonus ${difficulty} question!`,
   };
 
   try {
-    return (headerLocation.innerText = headerContent[state]);
+    return (headerLocation.innerHTML = headerContent[state]);
   } catch {}
 };
 

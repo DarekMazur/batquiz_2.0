@@ -24,19 +24,30 @@ const QuizInit = (appBody) => {
 
   const handleDifficultyClick = (e) => {
     quizDifficulty = e.target.name;
+
+    if (e.target.parentElement.querySelector('.selectDifficulty--active')) {
+      e.target.parentElement
+        .querySelector('.selectDifficulty--active')
+        .classList.remove('selectDifficulty--active');
+    }
+
+    e.target.classList.add('selectDifficulty--active');
     document.querySelector('.alertMessage').innerHTML = '';
   };
 
   const handleNameChange = (e) => {
-    userName = e.target.value;
+    userName = e.target.value.toString();
     document.querySelector('.alertMessage').innerHTML = '';
   };
 
   const handleReset = () => {
     quizDifficulty = initialState.quizDifficulty;
     userName = initialState.userName;
-    document.querySelector(`.nameForm_playerName`).value = '';
+    document.querySelector(`.nameForm`).value = '';
     document.querySelector('.alertMessage').innerHTML = '';
+    document
+      .querySelector('.selectDifficulty--active')
+      .classList.remove('selectDifficulty--active');
   };
 
   const handleQuizSubmit = () => {
@@ -82,6 +93,7 @@ const QuizInit = (appBody) => {
     }
 
     await buildQuizBody(quizDifficulty);
+    document.querySelector('.quiz__introduction').innerHTML = '';
     getHeader(quizTitle, 'onQuiz', userName, quizDifficulty);
 
     document.querySelectorAll(`.listItem`).forEach((listItem) => {
@@ -118,7 +130,7 @@ const QuizInit = (appBody) => {
       <div class='buttonWrapper'>
         ${createButtonList(['easy', 'normal', 'hard'], 'selectDifficulty')}
       </div>
-      <input class='nameForm_playerName' name='name' />
+      <input class='nameForm' name='name' />
       <label for='name'>Imię/Nick</label>
       <p class='alertMessage'>
       </p>
@@ -144,9 +156,7 @@ const QuizInit = (appBody) => {
         button.addEventListener('click', handleDifficultyClick);
       }),
     )
-    .then(
-      document.querySelector(`.nameForm_playerName`).addEventListener('change', handleNameChange),
-    )
+    .then(document.querySelector(`.nameForm`).addEventListener('change', handleNameChange))
     .then(document.querySelector(`button[name='reset']`).addEventListener('click', handleReset))
     .then(
       document.querySelector(`button[name='submit']`).addEventListener('click', handleClickStart),

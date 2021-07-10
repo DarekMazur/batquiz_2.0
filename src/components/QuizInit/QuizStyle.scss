@@ -10,6 +10,24 @@
   }
 
   &__wrapper {
+    .buttonWrapper {
+      display: flex;
+      justify-content: center;
+      .selectDifficulty {
+        width: 10rem;
+        height: 3rem;
+        margin: 1rem 1.2rem;
+        background-color: #021c25;
+        color: #c4b61d;
+        font-family: 'Russo One', sans-serif;
+
+        &--active {
+          background-color: #c4b61d;
+          color: #186c89;
+        }
+      }
+    }
+
     .alertMessage {
       height: 1.8rem;
       padding-top: 0.3rem;

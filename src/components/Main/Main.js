@@ -1,3 +1,5 @@
+import * as mainStyle from './MainStyle.scss';
+
 import QuizInit from '../QuizInit/QuizInit';
 
 const Main = () => {

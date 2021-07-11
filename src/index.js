@@ -1,5 +1,3 @@
-import * as styles from './style.scss';
-
 /*
   TODO: refactoring
   TODO: tests

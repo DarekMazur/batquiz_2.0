@@ -6,8 +6,6 @@
   BatQuiz
 </h1>
 
-## :hammer: Work in progres :wrench:
-
 ## :ballot_box_with_check: About app
 
 BatQuiz was a small application I made in October 2017 to practice jQuery. It still works on <a href="http://batquiz.dariusz-mazur.pl/" target="_blank">batquiz.dariusz-mazur.pl</a> (with only little content updates) but... well, that was my very beginning.

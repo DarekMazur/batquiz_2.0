@@ -1,3 +1,4 @@
+import * as mainStyles from '../../style.scss';
 import * as styles from './HeaderStyle.scss';
 
 const Header = () => {

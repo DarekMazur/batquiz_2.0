@@ -1,5 +1,4 @@
-import * as mainStyles from '../../style.scss';
-import * as styles from './HeaderStyle.scss';
+import * as headerStyles from './HeaderStyle.scss';
 
 const Header = () => {
   const headerWrapper = document.createElement('header');

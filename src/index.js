@@ -1,4 +1,4 @@
-import * as styles from './style.scss';
+import * as globalStyles from './style.scss';
 
 /*
   TODO: refactoring

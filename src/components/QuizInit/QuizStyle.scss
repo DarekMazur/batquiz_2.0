@@ -31,6 +31,18 @@ button {
       }
     }
 
+    @media (max-width: 600px) {
+      button {
+        width: 90%;
+        height: 2rem;
+      }
+
+      .buttonWrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
     .form {
       margin: 3rem 0;
       display: flex;
@@ -64,6 +76,18 @@ button {
       input:not(:placeholder-shown) + label {
         top: 0.1rem;
         font-size: 0.7rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .form {
+        &__name {
+          width: 300px;
+        }
+
+        label {
+          left: calc(50% - 140px);
+        }
       }
     }
 
@@ -138,6 +162,18 @@ button {
           height: 100%;
           top: 0;
           left: 0;
+        }
+      }
+    }
+
+    @media (max-width: 600px) {
+      .answersList {
+        grid-template-columns: repeat(2, 150px [col-start]);
+        grid-template-rows: repeat(2, 3.5rem);
+        grid-gap: 1rem;
+
+        .listItem {
+          font-size: 0.9rem;
         }
       }
     }

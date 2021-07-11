@@ -2,7 +2,7 @@
   "name": "batquiz",
   "version": "2.0.0",
   "description": "Simple quiz",
-  "main": ".src/index.html",
+  "main": "index.html",
   "scripts": {
     "dev": "npx parcel index.html",
     "build": "npx parcel build index.html"

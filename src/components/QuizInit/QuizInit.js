@@ -60,7 +60,9 @@ const QuizInit = (appBody) => {
       );
     };
     if (document.querySelectorAll('.listItem--active').length < 10) {
-      if (confirm('Quiz is not finished yet. Are you sure you want to continue?')) {
+      if (
+        confirm('Nie ma jeszcze odpowiedzi na wszystkie pytania. Czy na pewno chcesz iść dalej?')
+      ) {
         sendAnswers();
       } else {
         null;
@@ -70,7 +72,7 @@ const QuizInit = (appBody) => {
   };
 
   const handleQuizGiveUp = () => {
-    if (confirm('Are you sure you want to quit?')) {
+    if (confirm('Czy na pewno chcesz przerwać?')) {
       location.reload();
     } else {
       null;
@@ -100,8 +102,8 @@ const QuizInit = (appBody) => {
       listItem.addEventListener('click', handleAnswer);
     });
     document.querySelector(`.quiz__navigation`).innerHTML = `
-        <button name='resolve'>Send!</button>
-        <button name='giveUp'>Give up</button>
+        <button name='resolve'>Gotowe!</button>
+        <button name='giveUp'>Rezygnuj</button>
       `;
 
     document.querySelector(`button[name='resolve']`).addEventListener('click', handleQuizSubmit);

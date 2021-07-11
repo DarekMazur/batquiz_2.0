@@ -50,14 +50,14 @@ export const buildResutsView = (count, maxCount) => {
       <div class='results'>
         <img class='results__image' src=${rankImg} alt=${rank}>
         <p class='results__description'>
-          You get <span class='results__description--detail'>${count} points (${
+          Zdobywasz <span class='results__description--detail'>${count} punktów (${
       result < 0 ? 0 : (result * 100).toFixed(0)
     }%)</span>.
         </p>
       </div>
     `;
     document.querySelector(`.quiz__navigation`).innerHTML = `
-      <button name='quit'>Close</button>
+      <button name='quit'>Zakończ</button>
     `;
   };
 

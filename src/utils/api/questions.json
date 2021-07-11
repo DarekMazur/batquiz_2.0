@@ -4,32 +4,28 @@
       "id": "e01",
       "question": "Kto jest Batmanem?",
       "answers": {
-        "i": ["Clark Kent", "Hall Jordan", "Bruce Wayne", "Barry Allen"],
-        "img": "e01"
+        "i": ["Clark Kent", "Hall Jordan", "Bruce Wayne", "Barry Allen"]
       }
     },
     {
       "id": "e02",
       "question": "Z jakiego miasta pochodzi Batman?",
       "answers": {
-        "i": ["Gotham City", "Star City", "Metropolis", "Central City"],
-        "img": "e02"
+        "i": ["Gotham City", "Star City", "Metropolis", "Central City"]
       }
     },
     {
       "id": "e03",
       "question": "Jeden z przeciwników Batmana jest znany z zagadek. Kto?",
       "answers": {
-        "i": ["Joker", "Killer Crock", "Riddler", "Poison Ivy"],
-        "img": "e03"
+        "i": ["Joker", "Killer Crock", "Riddler", "Poison Ivy"]
       }
     },
     {
       "id": "e04",
       "question": "Kogo nazywano \"Cudownym Chłopcem\"?",
       "answers": {
-        "i": ["Młodego Bruce'a Wayne'a", "Robina", "Jima Gordona", "Komisarza Loeba"],
-        "img": "e04"
+        "i": ["Młodego Bruce'a Wayne'a", "Robina", "Jima Gordona", "Komisarza Loeba"]
       }
     },
     {
@@ -41,8 +37,7 @@
           "Genialnym hakerem",
           "Zwykłym nastolatkiem",
           "Cyrkowcem"
-        ],
-        "img": "e05"
+        ]
       }
     },
     {
@@ -57,8 +52,7 @@
       "id": "e07",
       "question": "Kim był z zawodu Thomas Wayne?",
       "answers": {
-        "i": ["Lekarzem", "Prawnikiem", "Inżynierem", "Chemikiem"],
-        "img": "e07"
+        "i": ["Lekarzem", "Prawnikiem", "Inżynierem", "Chemikiem"]
       }
     },
     {
@@ -70,8 +64,7 @@
           "Byli w budynku, gdzie mafia podłożyła bombę",
           "Zastrzelił ich złodziej",
           "W wypadku lotniczym"
-        ],
-        "img": "e08"
+        ]
       }
     },
     {
@@ -83,16 +76,14 @@
           "Znał go od urodzenia.",
           "Bruce uratował Alfreda przed bandytami",
           "W restauracji"
-        ],
-        "img": "e09"
+        ]
       }
     },
     {
       "id": "e10",
       "question": "Jak nazywano Batmana i Robina?",
       "answers": {
-        "i": ["Rycerze Nocy", "Skrzydlaci Obrońcy", "Liga Sprawiedliwości", "Dynamiczny Duet"],
-        "img": "e10"
+        "i": ["Rycerze Nocy", "Skrzydlaci Obrońcy", "Liga Sprawiedliwości", "Dynamiczny Duet"]
       }
     }
   ],
@@ -101,72 +92,63 @@
       "id": "n01",
       "question": "Jakie jest prawdziwe imię Catwoman?",
       "answers": {
-        "i": ["Pamela Isley", "Selina Kyle", "Harleen Quinzel", "Vicky Vale"],
-        "img": "../assets/images/easy/1.jpg"
+        "i": ["Pamela Isley", "Selina Kyle", "Harleen Quinzel", "Vicky Vale"]
       }
     },
     {
       "id": "n02",
       "question": "Która z wymienionych postaci nigdy nie zastępowała Bruce'a Wayne'a w roli Batmana?",
       "answers": {
-        "i": ["Jim Gordon", "Dick Greyson", "Jean Paul Valley", "Harvey Bullock"],
-        "img": ""
+        "i": ["Jim Gordon", "Dick Greyson", "Jean Paul Valley", "Harvey Bullock"]
       }
     },
     {
       "id": "n03",
       "question": "Batman po raz pierwszy pojawił się w numerze Detective Comics vol. 1 #27 z maja 1939 roku. Kiedy numer trafił do sprzedarzy?",
       "answers": {
-        "i": ["17 marca '39", "18 kwietnia '39", "7 maja '39", "1 czerwca '39"],
-        "img": ""
+        "i": ["17 marca '39", "18 kwietnia '39", "7 maja '39", "1 czerwca '39"]
       }
     },
     {
       "id": "n04",
       "question": "Zanim Joker stał się znany pod obecną postacią, także był przestępcą. Jaki nosił przydomek?",
       "answers": {
-        "i": ["Bad Clown", "Red Hood", "Verdigo", "Venom"],
-        "img": ""
+        "i": ["Bad Clown", "Red Hood", "Verdigo", "Venom"]
       }
     },
     {
       "id": "n05",
       "question": "Alfred Pennyworth, zanim został kamerdynerem rodziny Wayne'ów był m. in.:",
       "answers": {
-        "i": ["aktorem", "kucharzem", "muzykiem", "kelnerem"],
-        "img": ""
+        "i": ["aktorem", "kucharzem", "muzykiem", "kelnerem"]
       }
     },
     {
       "id": "n06",
       "question": "Damian Wayne był synemm Bruce'a oraz:",
       "answers": {
-        "i": ["Seliny Kyle", "Barbary Gordon", "Talii al-Ghul", "Jezebel Jet"],
-        "img": ""
+        "i": ["Seliny Kyle", "Barbary Gordon", "Talii al-Ghul", "Jezebel Jet"]
       }
     },
     {
       "id": "n07",
       "question": "Dick Greyson, kiedy odłożył kostium Robina i został Nightwingiem, przeniósł się do innego miasta. Jakiego?",
       "answers": {
-        "i": ["Star City", "Blüdheaven", "Coast City", "Żadnego, został w Gotham"],
-        "img": ""
+        "i": ["Star City", "Blüdheaven", "Coast City", "Żadnego, został w Gotham"]
       }
     },
     {
       "id": "n08",
       "question": "Jedną z dwóch osób, które stworzyły postać Batmana był Bob Kane. Wspólnie z kim?",
       "answers": {
-        "i": ["Bill Finger", "Stan Lee", "Mort Weisinger", "Joe Shuster"],
-        "img": ""
+        "i": ["Bill Finger", "Stan Lee", "Mort Weisinger", "Joe Shuster"]
       }
     },
     {
       "id": "n09",
       "question": "Jason Todd, drugi z Robinów, został zabity przez:",
       "answers": {
-        "i": ["Bane'a", "Jockera", "Riddlera", "Pingwina"],
-        "img": ""
+        "i": ["Bane'a", "Jockera", "Riddlera", "Pingwina"]
       }
     },
     {
@@ -178,8 +160,7 @@
           "Kongresmana",
           "Burmistrza Gotham",
           "Prokuratora Generalnego Gotham"
-        ],
-        "img": ""
+        ]
       }
     }
   ],
@@ -196,24 +177,21 @@
       "id": "h02",
       "question": "W którym numerze po raz pierwszy pojawiła się postać Alfreda?",
       "answers": {
-        "i": ["maj '39", "kwiecień '40", "lipiec '41", "kwiecień '43"],
-        "img": ""
+        "i": ["maj '39", "kwiecień '40", "lipiec '41", "kwiecień '43"]
       }
     },
     {
       "id": "h03",
       "question": "Ile lat miał Bruce Wayne w pierwszym tomie \"Powrotu Mrocznego Rycerza\"?",
       "answers": {
-        "i": ["29", "35", "50", "61"],
-        "img": ""
+        "i": ["29", "35", "50", "61"]
       }
     },
     {
       "id": "h04",
       "question": "Kto w \"Kryzysie Torzsamości\" zabił ojca Tima Drake'a?",
       "answers": {
-        "i": ["Captain Cold", "Mirror Master", "Captain Boomerang", "Grodd"],
-        "img": ""
+        "i": ["Captain Cold", "Mirror Master", "Captain Boomerang", "Grodd"]
       }
     },
     {
@@ -225,32 +203,28 @@
           "Porwał Alfreda",
           "Podłożył bombę atomową w Gotham",
           "Ukradł trumny z ciałami jego rodziców"
-        ],
-        "img": ""
+        ]
       }
     },
     {
       "id": "h06",
       "question": "Jak w historii \"Zagłada Gotham\" miał na nazwisko ekscentryczny badacz nietoperzy?",
       "answers": {
-        "i": ["Manfurd", "Prinn", "Langstrom", "Queen"],
-        "img": ""
+        "i": ["Manfurd", "Prinn", "Langstrom", "Queen"]
       }
     },
     {
       "id": "h07",
       "question": "Jak nazywał się przedsiębiorca, który w komiksie Detective Comics #27 z maja 1939 roku próbował zamordować swoich wspólników?",
       "answers": {
-        "i": ["Alfred Stryker", "Paul Rotgers", "Steven Crane", "James Lambert"],
-        "img": ""
+        "i": ["Alfred Stryker", "Paul Rotgers", "Steven Crane", "James Lambert"]
       }
     },
     {
       "id": "h08",
       "question": "Jak miała na imię pielęgniarką, którą w komiksie \"Azyl Arkham\" Joker wykorzystał do sprowadzenia Batmana?",
       "answers": {
-        "i": ["Martha", "Pearl", "Jenny", "Daisy"],
-        "img": ""
+        "i": ["Martha", "Pearl", "Jenny", "Daisy"]
       }
     },
     {
@@ -262,16 +236,14 @@
           "Batman Beyond",
           "Batman Incorporated",
           "Flashpoint Paradox"
-        ],
-        "img": ""
+        ]
       }
     },
     {
       "id": "h10",
       "question": "W komiksie Batman #2 z serii New52 Mroczny Rycerz znajduje trop ukryty w zębie ofiary zabójstwa. Który to był ząb?",
       "answers": {
-        "i": ["Lewa czwórka", "Prawa górna jedynka", "Trzeci ząb trzonowy", "Lewy ząb mądrości"],
-        "img": ""
+        "i": ["Lewa czwórka", "Prawa górna jedynka", "Trzeci ząb trzonowy", "Lewy ząb mądrości"]
       }
     }
   ]

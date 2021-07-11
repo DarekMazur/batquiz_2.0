@@ -5,3 +5,6 @@ export const getQuestions = (difficulty, questionType) =>
   fetch(questionType ? bonus : questions).then((response) =>
     response.json().then((data) => data[difficulty]),
   );
+
+// export const getQuestions = (difficulty, questionType) =>
+//   fetch(bonus).then((response) => response.json().then((data) => data[difficulty]));

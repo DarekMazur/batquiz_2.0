@@ -75,6 +75,7 @@ export const countResult = async (answers, difficulty, questionType, userName) =
     renderBonusBody();
     const bonusAnswer = async () => {
       const answerPatttern = await getAnswers(difficulty, 'bonus');
+      console.log(answerPatttern);
       const answer = getUserAnswers(document.querySelectorAll(`.listItem--active span`))[0];
       try {
         answerPatttern.find((correctAnswer) => {

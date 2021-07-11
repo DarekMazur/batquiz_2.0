@@ -1,5 +1,7 @@
 <p align="center">
+    <a href="https://batquiz.netlify.app/" target="_blank">
         <img alt="BatQuiz" src="src/assets/images/batQuiz.svg" width="200" />
+    </a>
 </p>
 
 <h1 align="center">
@@ -13,6 +15,8 @@ BatQuiz was a small application I made in October 2017 to practice jQuery. It st
 From the other hand... it may sound stupid, but BatQuiz was realy sentimental for me - because it was my first JS app and because.. yeah, because Batman ;)
 
 That's why I decided to completly rebuild it. And like those years ago it is mostly for treaning and learning reason. And for fun, of course :)
+
+<a href="https://batquiz.netlify.app/" target="_blank">Feel free to visit new version</a>
 
 ## 🚀 Quick start
 

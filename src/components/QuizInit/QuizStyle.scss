@@ -1,3 +1,10 @@
+button {
+  width: 10rem;
+  height: 3rem;
+  margin: 1rem 1.2rem;
+  font-family: 'Russo One', sans-serif;
+}
+
 .quiz {
   width: 90%;
 
@@ -14,12 +21,8 @@
       display: flex;
       justify-content: center;
       .selectDifficulty {
-        width: 10rem;
-        height: 3rem;
-        margin: 1rem 1.2rem;
         background-color: #021c25;
         color: #c4b61d;
-        font-family: 'Russo One', sans-serif;
 
         &--active {
           background-color: #c4b61d;
@@ -28,14 +31,120 @@
       }
     }
 
+    .form {
+      margin: 3rem 0;
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      &__name {
+        width: 30rem;
+        height: 3rem;
+        background-color: #282e3c;
+        border: none;
+        color: #c4b61d;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      label {
+        position: absolute;
+        top: 0.25rem;
+        left: calc(50% - 14.5rem);
+        font-size: 1.5rem;
+        color: #8d9195;
+        transition: 0.1s ease-out all;
+      }
+
+      input:focus + label {
+        top: 0.1rem;
+        font-size: 0.7rem;
+      }
+
+      input:not(:placeholder-shown) + label {
+        top: 0.1rem;
+        font-size: 0.7rem;
+      }
+    }
+
     .alertMessage {
       height: 1.8rem;
       padding-top: 0.3rem;
-      margin: 0.3rem;
+      margin-top: -1.5rem;
       color: #e43417;
       font-family: 'Indie Flower', cursive;
       font-size: 1.5rem;
       line-height: 1;
+      text-align: center;
+    }
+  }
+
+  &__navigation {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    button[name='submit'] {
+      color: #0060a8;
+    }
+    button[name='reset'] {
+      color: #960000;
+    }
+  }
+
+  .question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 80%;
+      max-width: 40rem;
+    }
+
+    .answersList {
+      margin: 1rem 0 2.5rem;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 20rem [col-start]);
+      grid-template-rows: repeat(2, 3rem);
+      grid-gap: 2rem;
+      list-style: none;
+
+      .listItem {
+        @extend button;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0.3rem;
+        text-align: center;
+        line-height: 1.2rem;
+        background-color: #021c25;
+        color: #c4b61d;
+
+        &--active {
+          background-color: #c4b61d;
+          color: #186c89;
+        }
+      }
+    }
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__description {
+      font-size: 2rem;
+
+      &--detail {
+        font-weight: 700;
+        color: #c4b61d;
+      }
     }
   }
 }

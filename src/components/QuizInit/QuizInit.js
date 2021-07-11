@@ -36,14 +36,14 @@ const QuizInit = (appBody) => {
   };
 
   const handleNameChange = (e) => {
-    userName = e.target.value.toString();
+    userName = e.target.value;
     document.querySelector('.alertMessage').innerHTML = '';
   };
 
   const handleReset = () => {
     quizDifficulty = initialState.quizDifficulty;
     userName = initialState.userName;
-    document.querySelector(`.nameForm`).value = '';
+    document.querySelector(`.form__name`).value = '';
     document.querySelector('.alertMessage').innerHTML = '';
     document
       .querySelector('.selectDifficulty--active')
@@ -53,7 +53,7 @@ const QuizInit = (appBody) => {
   const handleQuizSubmit = () => {
     const sendAnswers = () => {
       countResult(
-        getUserAnswers(document.querySelectorAll('.listItem--active')),
+        getUserAnswers(document.querySelectorAll('.listItem--active span')),
         quizDifficulty,
         count === null ? 'quiz' : 'bonus',
         userName,
@@ -130,8 +130,10 @@ const QuizInit = (appBody) => {
       <div class='buttonWrapper'>
         ${createButtonList(['easy', 'normal', 'hard'], 'selectDifficulty')}
       </div>
-      <input class='nameForm' name='name' />
-      <label for='name'>Imię/Nick</label>
+      <div class='form'>
+        <input class='form__name' name='name' autocomplete="off" placeholder=" " />
+        <label for='name'>Imię/Nick</label>
+      </div>
       <p class='alertMessage'>
       </p>
     `;
@@ -156,7 +158,7 @@ const QuizInit = (appBody) => {
         button.addEventListener('click', handleDifficultyClick);
       }),
     )
-    .then(document.querySelector(`.nameForm`).addEventListener('change', handleNameChange))
+    .then(document.querySelector(`.form__name`).addEventListener('change', handleNameChange))
     .then(document.querySelector(`button[name='reset']`).addEventListener('click', handleReset))
     .then(
       document.querySelector(`button[name='submit']`).addEventListener('click', handleClickStart),

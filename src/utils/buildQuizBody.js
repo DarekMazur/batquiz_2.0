@@ -82,7 +82,10 @@ const buildQuiz = (questionData) => {
     <img src=${images[questionData.id]}>
     <ul class='answersList answersList_${questionData.id}'>
       ${questionData.answers.i
-        .map((answer) => `<li class='listItem listItem__${questionData.id}'>${answer}</li>`)
+        .map(
+          (answer) =>
+            `<li class='listItem'><span class='listItem__${questionData.id}'>${answer}</span></li>`,
+        )
         .join('')}
     </ul>
   `;

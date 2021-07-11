@@ -9,7 +9,7 @@ const getHeader = (headerLocation, state, playerName, difficulty) => {
   headerContent = {
     onInit: 'Zmierz się z Batmanem!',
     onQuiz: `Witaj, <span class='user'>${escapeHtml(playerName)}</span>!
-    <p>Grasz na poziomie ${difficulty}</p>`,
+    <p>Grasz na poziomie <span class=${difficulty}>${difficulty}</span></p>`,
     onBonus: `Great job <span class='user'>${escapeHtml(
       playerName,
     )}</span> Get more points with bonus ${difficulty} question!`,

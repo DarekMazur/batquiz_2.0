@@ -47,8 +47,14 @@ export const buildResutsView = (count, maxCount) => {
   const renderResults = async () => {
     document.querySelector('.quiz__title').innerHTML = resultContent[rank];
     document.querySelector('.quiz__wrapper').innerHTML = `
-      <img src=${rankImg} alt=${rank}>
-      <p>You get ${count} points (${result < 0 ? 0 : (result * 100).toFixed(0)}%).</p>
+      <div class='results'>
+        <img class='results__image' src=${rankImg} alt=${rank}>
+        <p class='results__description'>
+          You get <span class='results__description--detail'>${count} points (${
+      result < 0 ? 0 : (result * 100).toFixed(0)
+    }%)</span>.
+        </p>
+      </div>
     `;
     document.querySelector(`.quiz__navigation`).innerHTML = `
       <button name='quit'>Close</button>

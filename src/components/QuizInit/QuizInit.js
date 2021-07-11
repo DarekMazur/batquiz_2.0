@@ -82,13 +82,15 @@ const QuizInit = (appBody) => {
   const handleClickStart = async function () {
     if (quizDifficulty === '') {
       try {
-        throw new Error('Choose quiz difficulty');
+        throw new Error(
+          'Wiem, że jesteś kozak i chcesz na hardzie, ale musisz nadal wybrać poziom',
+        );
       } catch (e) {
         return (document.querySelector('.alertMessage').innerHTML = e.message);
       }
     } else if (userName === '' || userName === ' ') {
       try {
-        throw new Error(`Don't be shy, introduce yourself!`);
+        throw new Error(`Nie ma się czego wstydzić, podaj jakieś imię...`);
       } catch (e) {
         return (document.querySelector('.alertMessage').innerHTML = e.message);
       }

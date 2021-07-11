@@ -135,7 +135,7 @@ const QuizInit = (appBody) => {
         ${createButtonList(['easy', 'normal', 'hard'], 'selectDifficulty')}
       </div>
       <div class='form'>
-        <input class='form__name' name='name' autocomplete="off" placeholder=" " />
+        <input id='name' class='form__name' name='name' autocomplete="off" placeholder=" " />
         <label for='name'>Imię/Nick</label>
       </div>
       <p class='alertMessage'>
